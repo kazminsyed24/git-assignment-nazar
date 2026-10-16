@@ -58,3 +58,21 @@
 ## 2. No, Git can normally marge changes made to different line automatically.
 
 ## 3. no, usually there would not be a  conflict.
+
+
+## Exercise 4.1 — Feature branch workflow
+
+## 1. What is the purpose of a pull request? Why not just merge directly?
+
+## a pull request let other to review changes before they add to main branch. it helps to find mistakes.
+## 2. Name two things a reviewer should check in a pull request.
+
+## check for code works correctly 
+## correct for erros, bus.
+
+## 3. What is the difference between a merge commit and a fast-forward merge?
+
+## A merge commit joins two branch histories by creating a new commit. A fast-forward merge moves the main branch pointer forward when there are no separate new commits on main that need to be joined.
+
+## PART 5 - MERGE CONFLICT SCENARIOS
+
