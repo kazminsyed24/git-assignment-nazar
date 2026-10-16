@@ -89,28 +89,24 @@
 ##    =======
 ##    DEBUG = False
 ##    >>>>>>> dev-b-branch
+### Scenario C
+## there will be conflict Both developers modified line 5 of config.py to other values, and this makes it impossible to select one from Git. The file would look like this:
 
-<<<<<<< HEAD
-## The part between <<<<<<< and ======= is the current branch (HEAD). The part between ======= and >>>>>>> is the branch being merged in.
+  ##   <<<<<<< HEAD
+  ##   DEBUG = True
+  ##  =======
+  ##  DEBUG = False
+   ## >>>>>>> dev-b-branch
 
-## The part between <<<<<<< and ======= is the current branch (HEAD). The middle part (between ======= and >>>>>>>) is the one being merged in.
-=======
-## The part between <<<<<<< and ======= is the current branch HEAD. The part between ======= and >>>>>>> is the branch being merged in.
-
-## The part between <<<<<<< and ======= is the current branch HEAD. The middle part between ======= and >>>>>>> is the one being merged in.
->>>>>>> 43a5a2302d0625811496285dfafdc7cefcb9fb62
+## The part between <<<<<<< and ======= is the current branch HEAD. The branch to be merged in is indicated between >>>>>>> and =======
 
 ### Scenario D
 ## git status – displays the list of files with conflicting changes. 2. Open index.html in VS Code and find the markers <<<<<<<, ======= and >>>>>>>
-## In this step, retain the proper code (or both codes) and remove all of the marker lines.
+## In this step retain the proper code (or both codes) and remove all of the marker lines.
 ## 4. Save the file
 ## 5. git add index.html
 ## 6. git commit -m "fix: resolve merge conflict in index.html"
 ## 7. git checkout master
 
 ### Scenario E
-<<<<<<< HEAD
-## yes it is a good practice. If you start first then you will have your team mates latest work in front of you first otherwise you might be working on old code the push might get reject and youre at a higher risk of getting merge conflicts further on
-=======
-## yes it is a good practice. If you start first then you will have your team mates latest work in front of you first otherwise you might be working on old code the push might get reject and youre at a higher risk of getting merge conflicts further on
->>>>>>> 43a5a2302d0625811496285dfafdc7cefcb9fb62
+## it is a good practice. you get your teammates latest work before you start. If you skip it you may work on old code your push can get rejected and you are at a higher risk of merge conflicts later.
