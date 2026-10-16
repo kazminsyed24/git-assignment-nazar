@@ -1,13 +1,12 @@
 # Git Assignment — Answers
-# Part 1 - Concepts & Theory
 
 ## Q1.1. What is a terminal? How is it different from clicking through folders in a file explorer?
 
-## ANSWER: a terminal is a text-based window used to input commands to instruct the computer's processing. A file explorer is a graphical application for exploring files, which means you use the mouse to click on folders and icons. The terminal is more efficient for repetitive tasks and can be scripted, the file explorer is easier to use for novice users, but slower.
+## ANSWER: a terminal is a text-based window used to input commands to instruct the computers processing a file explorer is a graphical application for exploring files which means you use the mouse to click on folders and icons the terminal is more efficient for repetitive tasks and can be scripted the file explorer is easier to use for novice users but slower.
 
 ## Q1.2. Write the terminal command to: (a) list all files including hidden ones, (b) create a folder called project , (c) move into that folder?
 
-## ANSWER: the command ls a displays all the files, hidden or not (b) the command mkdir project makes a folder called project and (c) the command cd project changes the directory to project.
+## ANSWER: the command ls a displays all the files hidden or not (b) the command mkdir project makes a folder called project and (c) the command cd project changes the directory to project.
 
 ## Q1.3 What does the cd .. command do? What about cd ~?
 
@@ -15,7 +14,7 @@
 
 ## Q2.4.Explain what version control is in your own words. Give one real-world analogy (not Google Docs — pick your own)
 
-## ANSWER: version control is a tool that allows you to keep track of any changes made to the files you save, which you can later access to return to an older version, view what has been changed, It's similar to a photo album of a building on the go each photo depicts the building at a specific point in time, so you have the option to look at any stage if something isn't going your way.
+## ANSWER: version control is a tool that allows you to keep track of any changes made to the files you save, which you can later access to return to an older version, view what has been changed its similar to a photo album of a building on the go each photo depicts the building at a specific point in time so you have the option to look at any stage if something isnt going your way.
 
 ## Q2.5. What is the difference between Git and GitHub? Can you use Git without GitHub?
 
@@ -35,7 +34,7 @@
 
 ## Q3.9. What is a .gitignore file? Write a .gitignore that ignores: all called node_modules/ , and any file ending in .env .?
 
-## Answer: A `.gitignore` file tells Git which untracked files and folders to ignore. For example, it can exclude log files, installed dependencies, and environment configuration files.
+## Answer: A .gitignore file tells Git which untracked files and folders to ignore. For example, it can exclude log files, installed dependencies, and environment configuration files.
 ## *.log
 ## node_modules/
 ## *.env
@@ -76,12 +75,15 @@
 
 ## PART 5 - MERGE CONFLICT SCENARIOS
 ### Scenario A
+
 ## no conflict ahmed changed line 10 and sara changed line 1 they are distinct branches and Git can automatically merge both changes.
 
 ### Scenario B
+
 ## no conflict Ali made modifications to style.css and Fatima made modifications to app.js. they are two different files so git cant conflict.
 
 ### Scenario C
+
 ## yes there will be a conflict but it will be resolved. both developers changed the same line line 5 of the same file to different value so Git cannot choose one the file would contain the following
 ### Scenario C
 ## <<<<<<< HEAD
@@ -90,23 +92,18 @@
 ##    DEBUG = False
 ##    >>>>>>> dev-b-branch
 ### Scenario C
-## there will be conflict Both developers modified line 5 of config.py to other values, and this makes it impossible to select one from Git. The file would look like this:
 
-  ##   <<<<<<< HEAD
-  ##   DEBUG = True
-  ##  =======
-  ##  DEBUG = False
-   ## >>>>>>> dev-b-branch
-
-## The part between <<<<<<< and ======= is the current branch HEAD. The branch to be merged in is indicated between >>>>>>> and =======
+## Yes there will be a conflict both developers changed line 5 of the same file to different values so Git does not know which one to keep the part between <<<<<<< and ======= is my current branch the part between ======= and >>>>>>> is the other branch.
 
 ### Scenario D
-## git status – displays the list of files with conflicting changes. 2. Open index.html in VS Code and find the markers <<<<<<<, ======= and >>>>>>>
-## In this step retain the proper code (or both codes) and remove all of the marker lines.
+
+## git status displays the list of files with conflicting changes. 
+## 2. Open index.html in VS Code and find the markers <<<<<<<, ======= and >>>>>>>
+## In this step retain the proper code or both codes and remove all of the marker lines.
 ## 4. Save the file
 ## 5. git add index.html
-## 6. git commit -m "fix: resolve merge conflict in index.html"
-## 7. git checkout master
+## 6. git commit -m "fix: resolve merge conflict in index..html.
 
 ### Scenario E
-## it is a good practice. you get your teammates latest work before you start. If you skip it you may work on old code your push can get rejected and you are at a higher risk of merge conflicts later.
+
+## it is a good practice. you get your teammates latest work before you start if you skip it you may work on old code your push can get rejected and you are at a higher risk of merge conflicts later.
