@@ -90,9 +90,15 @@
 ##    DEBUG = False
 ##    >>>>>>> dev-b-branch
 
+<<<<<<< HEAD
 ## The part between <<<<<<< and ======= is the current branch (HEAD). The part between ======= and >>>>>>> is the branch being merged in.
 
 ## The part between <<<<<<< and ======= is the current branch (HEAD). The middle part (between ======= and >>>>>>>) is the one being merged in.
+=======
+## The part between <<<<<<< and ======= is the current branch HEAD. The part between ======= and >>>>>>> is the branch being merged in.
+
+## The part between <<<<<<< and ======= is the current branch HEAD. The middle part between ======= and >>>>>>> is the one being merged in.
+>>>>>>> 43a5a2302d0625811496285dfafdc7cefcb9fb62
 
 ### Scenario D
 ## git status – displays the list of files with conflicting changes. 2. Open index.html in VS Code and find the markers <<<<<<<, ======= and >>>>>>>
@@ -103,4 +109,8 @@
 ## 7. git checkout master
 
 ### Scenario E
+<<<<<<< HEAD
 ## yes it is a good practice. If you start first then you will have your team mates latest work in front of you first otherwise you might be working on old code the push might get reject and youre at a higher risk of getting merge conflicts further on
+=======
+## yes it is a good practice. If you start first then you will have your team mates latest work in front of you first otherwise you might be working on old code the push might get reject and youre at a higher risk of getting merge conflicts further on
+>>>>>>> 43a5a2302d0625811496285dfafdc7cefcb9fb62
