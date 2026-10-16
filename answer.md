@@ -39,4 +39,10 @@
 ## *.log
 ## node_modules/
 ## *.env
+## Exercise 2.2
+## Q2.6. 
+## Answer: we did this to keep them organized. This make commit easier to find mistakes, undo changes and easier to understand. when changes have seperate purpose we should split commits. 
 
+## What would happen if you made a local commit first WITHOUT pulling? What command helps you check?
+
+## ANSWER: if local commit before pull, local branch and github branch may have different commits. because when i try to push it will reject because i dont have it locally. git status will help and git log --online to check  commit history.
