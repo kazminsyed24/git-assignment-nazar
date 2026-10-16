@@ -35,4 +35,8 @@
 
 ## Q3.9. What is a .gitignore file? Write a .gitignore that ignores: all called node_modules/ , and any file ending in .env .?
 
-## Answer: .gitignore file is a text file that lists files or folders to be ignored by Git and not included in a version control history, such as passwords, large folders or temporary files. This is the .gitignore file that excludes node_modules and any type of .env file node_modules/*.env.
+## Answer: A `.gitignore` file tells Git which untracked files and folders to ignore. For example, it can exclude log files, installed dependencies, and environment configuration files.
+## *.log
+## node_modules/
+## *.env
+
