@@ -68,11 +68,39 @@
 ## 2. Name two things a reviewer should check in a pull request.
 
 ## check for code works correctly 
-## correct for erros, bus.
+## correct for erros bus
 
 ## 3. What is the difference between a merge commit and a fast-forward merge?
 
-## A merge commit joins two branch histories by creating a new commit. A fast-forward merge moves the main branch pointer forward when there are no separate new commits on main that need to be joined.
+## a merge commit joins two branch histories by creating a new commit a fastforward merge moves the main branch pointer forward when there are no separate new commits on main that need to be joined.
 
 ## PART 5 - MERGE CONFLICT SCENARIOS
+### Scenario A
+## no conflict ahmed changed line 10 and sara changed line 1 they are distinct branches and Git can automatically merge both changes.
 
+### Scenario B
+## no conflict Ali made modifications to style.css and Fatima made modifications to app.js. they are two different files so git cant conflict.
+
+### Scenario C
+## yes there will be a conflict but it will be resolved. both developers changed the same line line 5 of the same file to different value so Git cannot choose one the file would contain the following
+### Scenario C
+## <<<<<<< HEAD
+##  DEBUG = True
+##    =======
+##    DEBUG = False
+##    >>>>>>> dev-b-branch
+
+## The part between <<<<<<< and ======= is the current branch HEAD. The part between ======= and >>>>>>> is the branch being merged in.
+
+## The part between <<<<<<< and ======= is the current branch HEAD. The middle part between ======= and >>>>>>> is the one being merged in.
+
+### Scenario D
+## git status – displays the list of files with conflicting changes. 2. Open index.html in VS Code and find the markers <<<<<<<, ======= and >>>>>>>
+## In this step, retain the proper code (or both codes) and remove all of the marker lines.
+## 4. Save the file
+## 5. git add index.html
+## 6. git commit -m "fix: resolve merge conflict in index.html"
+## 7. git checkout master
+
+### Scenario E
+## yes it is a good practice. If you start first then you will have your team mates latest work in front of you first otherwise you might be working on old code the push might get reject and youre at a higher risk of getting merge conflicts further on
