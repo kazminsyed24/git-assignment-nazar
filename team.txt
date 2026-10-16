@@ -1,3 +1,4 @@
 Team: Data & Analytics
-Motto: We turn data into decisions.
+Motto: Data drives everything..
 Members: 5
+
