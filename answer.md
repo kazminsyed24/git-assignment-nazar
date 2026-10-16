@@ -46,3 +46,15 @@
 ## What would happen if you made a local commit first WITHOUT pulling? What command helps you check?
 
 ## ANSWER: if local commit before pull, local branch and github branch may have different commits. because when i try to push it will reject because i dont have it locally. git status will help and git log --online to check  commit history.
+
+## Exercise 3.1(9)
+##
+## since feature branch is created. fast forward merge happens when the main branch has no new commits. Git simply moves the main branch forward without creating a new merge commit. when both branch have different new commits a merge commit happens. Git join the branches.
+
+## 3.2(15)
+
+## ANSWER: 1. the conflic happen when both branches changed same line in same file. 
+
+## 2. No, Git can normally marge changes made to different line automatically.
+
+## 3. no, usually there would not be a  conflict.
