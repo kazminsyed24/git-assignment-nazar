@@ -1,3 +1,9 @@
 Team: Data & Analytics
+HEAD
 Motto: Analytics is our superpower.
 Members: 5
+
+Motto: Data drives everything..
+Members: 5
+
+feature/update-motto
